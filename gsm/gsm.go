@@ -288,6 +288,7 @@ func (g *GSM) SendPDU(tpdu []byte, options ...at.CommandOption) (rsp string, err
 //
 // Commonly required fields are extracted for easy access.
 type Message struct {
+	g       *GSM
 	Number  string
 	Message string
 	SCTS    tpdu.Timestamp
@@ -361,6 +362,7 @@ func (g *GSM) StartMessageRx(mh MessageHandler, eh ErrorHandler, options ...RxOp
 		}
 		if m != nil {
 			mh(Message{
+				g:       g,
 				Number:  tpdus[0].OA.Number(),
 				Message: string(m),
 				SCTS:    tpdus[0].SCTS,
