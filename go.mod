@@ -1,4 +1,4 @@
-module github.com/warthog618/modem
+module github.com/lantaris/modem
 
 require (
 	github.com/pkg/errors v0.9.1
