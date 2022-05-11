@@ -16,10 +16,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/warthog618/modem/at"
-	"github.com/warthog618/modem/gsm"
-	"github.com/warthog618/modem/serial"
-	"github.com/warthog618/modem/trace"
+	"github.com/lantaris/modem/at"
+	"github.com/lantaris/modem/gsm"
+	"github.com/lantaris/modem/serial"
+	"github.com/lantaris/modem/trace"
 	"github.com/warthog618/sms"
 )
 
